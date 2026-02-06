@@ -16,7 +16,7 @@ ps = PorterStemmer()
 
 def transform_text(text):
     text = text.lower()
-    tokens = nltk.word_tokenize(text)
+    tokens = text.split()
 
     y = []
     for i in tokens:
